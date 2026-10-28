@@ -23,11 +23,11 @@ Chào mừng các bạn CTV SRC 2026 đến với Assignment 1. Mục tiêu củ
 
 Ví dụ trên Windows:
 ```bash
-PS C:\...\...\assigment1>
+PS C:\...\...\Assignment1>
 ```
 Ví dụ trên Linux:
 ```bash
-username@hostname:~/assigment1$
+username@hostname:~/Assignment1$
 ```
 
 ### Bước 3: Cài đặt môi trường
