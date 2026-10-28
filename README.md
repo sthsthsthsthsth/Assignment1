@@ -135,6 +135,7 @@ Hướng dẫn quan sát
 ### BTVN
 
 Trả lời các câu hỏi sau và xuất báo cáo ra file `.pdf`:
+- Hãy vẽ lưu đồ thuật toán của các thuật toán (khuyên dùng draw.io)
 
 - Quan sát đường biểu diễn của Selection Sort trên cả 4 bài đo (ngẫu nhiên, gần như sắp xếp, đảo ngược, trùng lặp). Thời gian chạy có thay đổi đáng kể không? Vì sao?
 
@@ -142,16 +143,15 @@ Trả lời các câu hỏi sau và xuất báo cáo ra file `.pdf`:
 
 - Tại sao trên dữ liệu ngẫu nhiên ở quy mô mảng lớn ($N = 10,000 \to 20,000$), Quick Sort lại bỏ xa hai thuật toán còn lại?
 
-- Tại sao ở mảng kích thước nhỏ ($N \le 100$), Quick Sort lại chậm hơn Insertion Sort? *Gợi ý:* hãy suy nghĩ về chi phí gọi hàm đệ quy
+- Tại sao ở mảng kích thước nhỏ ($N \le 100$), Quick Sort lại chậm hơn Insertion Sort? *Gợi ý:* hãy suy nghĩ về hàm đệ quy các hoạt động của hàm đề quy dưới code
 
 - Lập bảng so sánh tổng kết về 3 thuật toán: Độ phức tạp thời gian (Best, Average, Worst Case), dữ liệu nào tối ưu nhất, dữ liệu nào tồi tệ nhất của mỗi thuật toán.
-
-- Nếu trong thực tế bạn phải lựa chọn hoặc thiết kế thuật toán sắp xếp, bạn sẽ dựa trên những yếu tố nào của dữ liệu (kích thước, độ sắp xếp sẵn, mức độ trùng lặp) để đưa ra quyết định?
 
 - *Bonus:* Nhìn vào đường nét đứt `QUICK (Ref)` của CLB: tại sao phiên bản này không hề bị suy biến ở các trường hợp dữ liệu không tối ưu mà vẫn giữ được tốc độ ổn định?
 
 ---
 ### Tài liệu tham khảo
+- [Flowchart](https://www.geeksforgeeks.org/dsa/an-introduction-to-flowcharts/)
 - [Sorting](https://www.geeksforgeeks.org/dsa/introduction-to-sorting-algorithm/)
 - [Big O Notation](https://www.geeksforgeeks.org/dsa/analysis-algorithms-big-o-analysis/)
 - [Recursion](https://www.geeksforgeeks.org/dsa/introduction-to-recursion-2/)
