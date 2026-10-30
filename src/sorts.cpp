@@ -12,32 +12,54 @@
 
 #include "../include/sorts.h"
 
-void swap(int* arr, int idx1, int idx2){
-    int tmp = arr[idx1];
-    arr[idx1] = arr[idx2];
-    arr[idx2] = tmp;
+void swap(int& obj1, int& obj2){
+    int tmp = obj1;
+    obj1 = obj2;
+    obj2 = tmp;
 }
 
-void quickSort(int* arr, int n) {
-    // CTV TODO: Cài đặt thuật toán Quick Sort tại đây
-    (void)arr;
-    (void)n;
+int partition(int arr[], int low, int high) {
+    int pivot = arr[low];
+    int i = low - 1;
+    int j = high + 1;
+    while (true) {
+        do {
+            i++;
+        } while (arr[i] < pivot);
+        do {
+            j--;
+        } while (arr[j] > pivot);
+        if (i >= j)
+            return j;
+        swap(arr[i], arr[j]);
+    }
+}
+
+void quickSort(int arr[], int n) {
+    if (n <= 1) return;
+    int p = partition(arr, 0, n - 1);
+    quickSort(arr, p + 1);
+    quickSort(arr + p + 1, n - p - 1);
 }
 
 void selectionSort(int* arr, int n) {
-    // CTV TODO: Cài đặt thuật toán Selection Sort tại đây
     if (n==1) return;
         
     int idxM=0;
     for (int i=1;i<n;i++){
         if (arr[i]<arr[idxM]){idxM=i;}
     }
-    swap(arr, 0,idxM);
+    swap(arr[0], arr[idxM]);
     selectionSort(arr+1,n-1);
 }
 
 void insertionSort(int* arr, int n) {
-    // CTV TODO: Cài đặt thuật toán Insertion Sort tại đây
-    (void)arr;
-    (void)n;
+    for (int i = 1; i<n; i++){
+        int j = i;
+        while ((j>=1) && (arr[j-1] > arr[j])){
+            swap(arr[j],arr[j-1]);
+            j--;
+        }
+    }
+
 }
