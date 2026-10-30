@@ -43,7 +43,7 @@ void quickSort(int arr[], int n) {
 }
 
 void selectionSort(int* arr, int n) {
-    if (n==1) return;
+    if (n<=1) return;
         
     int idxM=0;
     for (int i=1;i<n;i++){
