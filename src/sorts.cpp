@@ -12,6 +12,12 @@
 
 #include "../include/sorts.h"
 
+void swap(int* arr, int idx1, int idx2){
+    int tmp = arr[idx1];
+    arr[idx1] = arr[idx2];
+    arr[idx2] = tmp;
+}
+
 void quickSort(int* arr, int n) {
     // CTV TODO: Cài đặt thuật toán Quick Sort tại đây
     (void)arr;
@@ -20,8 +26,14 @@ void quickSort(int* arr, int n) {
 
 void selectionSort(int* arr, int n) {
     // CTV TODO: Cài đặt thuật toán Selection Sort tại đây
-    (void)arr;
-    (void)n;
+    if (n==1) return;
+        
+    int idxM=0;
+    for (int i=1;i<n;i++){
+        if (arr[i]<arr[idxM]){idxM=i;}
+    }
+    swap(arr, 0,idxM);
+    selectionSort(arr+1,n-1);
 }
 
 void insertionSort(int* arr, int n) {
