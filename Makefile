@@ -10,8 +10,8 @@ CXXFLAGS = -std=c++17 -Wall -Wextra -O3
 
 ifeq ($(OS),Windows_NT)
     PYTHON ?= python
-    VENV_PYTHON = .venv/Scripts/python.exe
-    VENV_PIP = .venv/Scripts/pip.exe
+    VENV_PYTHON = .venv\Scripts\python.exe
+    VENV_PIP = .venv\Scripts\pip.exe
     # Tăng kích thước stack trên Windows lên 64MB để Quick Sort đệ quy không bị tràn stack ở N=20000
     LDFLAGS = -Wl,--stack,67108864
 else

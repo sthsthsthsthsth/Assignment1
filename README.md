@@ -86,7 +86,7 @@ Script sẽ thực thi 4 bài đo dữ liệu trên 3 quy mô kích thước (`s
 ### 2.1. Selection Sort
 Duyệt qua mảng có $n$ phần tử $[0 \dots n-1]$, tại mỗi vị trí $i$ tìm phần tử nhỏ nhất trong đoạn $[i \dots n-1]$ và hoán đổi về vị trí $i$.
 
-![Selection Sort Steps](docs/selection_sort_steps.png)
+![Selection Sort Steps](docs/selecetion_sort_steps.png)
 
 
 ---
