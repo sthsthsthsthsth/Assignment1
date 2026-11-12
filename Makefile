@@ -36,10 +36,15 @@ venv:
 setup: venv
 
 test: student_bin
-	$(PYTHON) scripts/test_debug.py
+	$(VENV_PYTHON) scripts/test_debug.py
 
 run: student_bin
-	$(PYTHON) scripts/harness.py
+ifeq ($(OS),Windows_NT)
+	@echo Running on Windows
+else
+	chmod +x ./reference/ref_linux_x64
+endif
+	$(VENV_PYTHON) scripts/harness.py
 
 clean:
 	rm -rf student_bin student_bin.exe *.png graphs
