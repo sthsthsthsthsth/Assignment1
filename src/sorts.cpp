@@ -1,7 +1,7 @@
 /*
  * FILE DÀNH CHO CTV.
- * Tên: [CTV điền họ và tên vào đây]
- * MSSV: [CTV điền mssv vào đây]
+ * Tên: [Nguyễn Trung Lương]
+ * MSSV: [202614867]
  *
  * YÊU CẦU:
  * - Các bạn chỉ được phép viết code bên trong các hàm dưới đây 
